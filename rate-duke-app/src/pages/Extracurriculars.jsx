@@ -13,17 +13,21 @@ const Extracurriculars = () => {
     // add background color
     // style={{backgroundColor: "#14319A", height: "100%", width: "100%"}}
     <div className="page">
-        <BoxLeft />
-        <BoxRight />
-        <BoxLeft />
-        <BoxRight />
-        <BoxLeft />
-        <BoxRight />
+        <div className="scrollable-div">
+            <BoxLeft />
+            <BoxRight />
+            <BoxLeft />
+            <BoxRight />
+            <BoxLeft />
+            <BoxRight />
+        </div>
+        <div style={{float: "right"}}>
         <Button variant="contained" startIcon={<AddBoxRoundedIcon />} 
             style={{fontSize: "large", backgroundColor: "#FFBB54", color: "black",
-            float: "right", marginBottom: "20px", marginRight: "320px"}}>
-            Add
+            float: "right", marginRight: "40px"}}>
+            Post
         </Button>
+        </div>
 
     </div>
   )

@@ -1,3 +1,4 @@
+
 /* speech bubble with left tail */
 .boxLeft {
     width: 400px;
@@ -99,18 +100,17 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 70px;
-  }
-  .star {
-    box-sizing: border-box;
-    position: absolute;
-    width: 19px;
-    height: 18px;
-    left: 217px;
-    top: 72px;
-    background: linear-gradient(0deg, #FFBB54, #FFBB54), linear-gradient(0deg, #FFBB54, #FFBB54), #FFBB54;
-    border: 0.5px solid #000000;
+    overflow: hidden;
   }
   
-  
+  .scrollable-div {
+    background-color: #14319A;
+    height: 540px;
+    overflow: auto;
+    width: 100%;
+    margin: 20px;
+    text-align: justify;
+    padding: 10px;
+  }
 
  
