@@ -90,6 +90,17 @@
       align-items: left;
 
   }
+
+  .star {
+    box-sizing: border-box;
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    left: 217px;
+    top: 72px;
+    background: linear-gradient(0deg, #FFBB54, #FFBB54), linear-gradient(0deg, #FFBB54, #FFBB54), #FFBB54;
+    border: 0.5px solid #000000;
+  }
   
   
 
