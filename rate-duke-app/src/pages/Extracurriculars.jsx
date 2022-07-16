@@ -4,12 +4,13 @@ export const UserContext = React.createContext();
 
 
 export default function Extracurriculars(){
-    const[description, setDescription] = React.useState("");
-    const[tags, setTags] = React.useState("");
-    const[title, setTitle] = React.useState("");
-    
+    const[description, setDescription] = React.createContext();
+    const[tags, setTags] = React.createContext();
+    const[title, setTitle] = React.createContext();
     return(
         <div>
+            
+
             
             
             <h1>hi</h1>

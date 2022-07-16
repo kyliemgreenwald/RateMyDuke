@@ -1,0 +1,116 @@
+/* speech bubble with left tail */
+.boxLeft {
+    width: 400px;
+    margin: 50px auto;
+    margin-top: 0px;
+    border: 4px solid #FFBB54;
+    background:#d9d9d9; 
+    /* padding: 20px; */
+    /* text-align: center; */
+    font-weight: 900;
+    color: black;
+    font-family: arial;
+    position: relative;
+    right: 70px;
+}
+
+.boxLeft:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #FFBB54;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FFBB54;
+    border-bottom: 10px solid transparent;
+    left: 20px;
+    bottom: -23px;
+    
+  }
+  
+.boxLeft:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #d9d9d9;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #d9d9d9; ;
+    border-bottom: 10px solid transparent;
+    left: 24px;
+    bottom: -13px;
+    
+}
+
+
+
+/* speech bubble with right tail */
+.boxRight {
+    width: 400px;
+    margin: 50px auto;
+    border: 4px solid #FFBB54;
+    /* padding: 20px; */
+    /* text-align: center; */
+    font-weight: 900;
+    background: #d9d9d9;
+    color: black;
+    font-family: arial;
+    position: relative;
+    left: 70px;
+}
+
+.boxRight:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #FFBB54;
+    border-top: 10px solid #FFBB54;
+    border-bottom: 10px solid transparent;
+    right: 20px;
+    bottom: -23px;
+  }
+  
+.boxRight:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #d9d9d9;
+    border-top: 10px solid #d9d9d9;
+    border-bottom: 10px solid transparent;
+    right: 24px;
+    bottom: -13px;
+  }
+
+  .title {
+      font-size: 15px;
+      text-align: left;
+      align-items: left;
+
+  }
+
+
+  .page {
+    background-color: #14319A;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .star {
+    box-sizing: border-box;
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    left: 217px;
+    top: 72px;
+    background: linear-gradient(0deg, #FFBB54, #FFBB54), linear-gradient(0deg, #FFBB54, #FFBB54), #FFBB54;
+    border: 0.5px solid #000000;
+  }
+  
+  
+
+ 
