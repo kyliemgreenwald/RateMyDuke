@@ -3,28 +3,47 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Duke from '../icons/DukeLogo';
+import './Home.css';
+import Button from '@mui/material/Button';
 
 export default function Home() {
+    const ref = React.useRef();
+
+    // const handleScroll = React.useCallback(() => {
+    //     console.log("scrolling")
+    //   }, [])
+
+    // React.useEffect(() => {
+    //     const div = ref.current
+    //     div.addEventListener("scroll", handleScroll)
+    //   }, [handleScroll])
+
     return (
-        <Box 
-            sx={{ 
-                flexGrow: 1, 
-                backgroundColor: 'blue',
-                height: '100%',
-                display: 'block',
-            }}
-        >
-            <Grid container spacing={2}>
-                <Grid xs={6}>
-                    <Typography sx={{color: 'white'}}>
-                        Rate My
-                    </Typography>
-                </Grid>
-                <Grid xs={6}>
+        <div className="home">  
+            <Box className="about">
+                <div className="logo">
                     <Duke />
-                </Grid>
-            </Grid>
-        </Box>
+                </div>
+                <Box sx= {{backgroundColor: "white", marginLeft: '230px', width: '65%', border: 10, borderRadius: 2, borderColor: 'white'}}>
+                    <Typography variant="h4" className="typewriter"> 
+                        Duke's largest hub for all things opinionated!
+                    </Typography>
+                </Box>
+                <div className="button">
+                    <Button 
+                        variant="contained"
+                        href={'./ratings/extracurriculars'}
+                        sx={{
+                            backgroundColor: '#FFBB54',
+                            fontSize: "large",
+                            color: "black"
+                        }}
+                    >
+                        Take me to the forum page!
+                    </Button>
+                </div>
+            </Box>
+        </div>
     );
 }
 
