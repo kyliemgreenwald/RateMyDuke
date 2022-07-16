@@ -24,22 +24,24 @@ export default function Home() {
                 <div className="logo">
                     <Duke />
                 </div>
+                <Box sx= {{backgroundColor: "white", marginLeft: '230px', width: '65%', border: 10, borderRadius: 2, borderColor: 'white'}}>
+                    <Typography variant="h4" className="typewriter"> 
+                        Duke's largest hub for all things opinionated!
+                    </Typography>
+                </Box>
                 <div className="button">
                     <Button 
                         variant="contained"
                         href={'./ratings/extracurriculars'}
                         sx={{
-                            backgroundColor: 'orange'
+                            backgroundColor: '#FFBB54',
+                            fontSize: "large",
+                            color: "black"
                         }}
                     >
                         Take me to the forum page!
                     </Button>
                 </div>
-                <Box>
-                    <div className="about-title">
-                        <Typography> about </Typography>
-                    </div>
-                </Box>
             </Box>
         </div>
     );
