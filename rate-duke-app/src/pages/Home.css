@@ -1,0 +1,45 @@
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    /* animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+}
+
+.logo {
+    width: 100%;
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.button {
+    position: absolute;
+}
+
+.about {
+    height: 788px;
+    width: 50%;
+    position: relative;
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+.about-title {
+    position: absolute;
+    left: 800px;
+}

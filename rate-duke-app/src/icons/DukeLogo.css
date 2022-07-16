@@ -1,6 +1,10 @@
 .duke-logo {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: auto;
     object-fit: cover;
     position: relative;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
 }
