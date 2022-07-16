@@ -13,7 +13,7 @@ const AboutUs = () => {
         <img src={TextBoxLeft} />
         <img src={TextBoxRight} />
     </div>
-    
+
     </div>
 
   )
