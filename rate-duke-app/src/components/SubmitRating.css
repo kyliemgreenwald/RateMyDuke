@@ -1,0 +1,13 @@
+.modal-border{
+    height: 100vh;
+    padding-top: 10em;
+    width: 90%;
+}
+.modal-inside{
+    width: 100%;
+    align-items: center;
+}
+
+.grid-item{
+    align-items: center;
+}

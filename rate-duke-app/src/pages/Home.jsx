@@ -1,7 +1,16 @@
 import React from 'react';
+import SubmitRating from '../components/SubmitRating'
 
 export default function Home() {
-    return(
-        <h1>hello you are in home page</h1>
+    
+
+    return( 
+        <div>
+            <h1>hello you are in home page</h1>
+            
+
+        </div>
+        
+
     );
 }
