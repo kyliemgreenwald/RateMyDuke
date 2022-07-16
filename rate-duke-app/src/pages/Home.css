@@ -1,0 +1,71 @@
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    /* animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+}
+
+.logo {
+    width: 100%;
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    top: 200px;
+}
+
+.button {
+    position: absolute;
+    bottom: 290px;
+    left: 550px;
+}
+
+.about {
+    height: 788px;
+    width: 100%;
+    position: relative;
+    background-color: #012169;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    overflow-y: auto;
+}
+
+.about-title {
+    position: absolute;
+    left: 800px;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .14em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

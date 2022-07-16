@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './duke_wordmark_white.png'; 
+import logo from './rmd_logo.png'; 
 import './DukeLogo.css'
 
 function Duke() {
