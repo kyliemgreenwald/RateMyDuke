@@ -1,42 +1,96 @@
-/* speech bubble */
-.box1 {
-    width: 300px;
+/* speech bubble with left tail */
+.boxLeft {
+    width: 400px;
     margin: 50px auto;
-    border: 4px solid #00bfb6;
-    padding: 20px;
-    text-align: center;
+    border: 4px solid #14319A;
+    background:#d9d9d9; 
+    /* padding: 20px; */
+    /* text-align: center; */
     font-weight: 900;
-    color: #00bfb6;
+    color: black;
     font-family: arial;
     position: relative;
+    right: 70px;
 }
 
-.box1:before {
+.boxLeft:before {
     content: "";
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 10px solid #00bfb6;
+    border-left: 10px solid #14319A;
     border-right: 10px solid transparent;
-    border-top: 10px solid #00bfb6;
+    border-top: 10px solid #14319A;
     border-bottom: 10px solid transparent;
     left: 20px;
     bottom: -23px;
+    
   }
   
-.box1:after {
+.boxLeft:after {
     content: "";
     width: 0px;
     height: 0px;
     position: absolute;
-    border-left: 10px solid #fff;
+    border-left: 10px solid #d9d9d9;
     border-right: 10px solid transparent;
-    border-top: 10px solid #fff;
+    border-top: 10px solid #d9d9d9; ;
     border-bottom: 10px solid transparent;
     left: 24px;
     bottom: -13px;
+    
 }
 
-/* speech bubble */
+
+
+/* speech bubble with right tail */
+.boxRight {
+    width: 400px;
+    margin: 50px auto;
+    border: 4px solid #14319A;
+    /* padding: 20px; */
+    /* text-align: center; */
+    font-weight: 900;
+    background: #d9d9d9;
+    color: black;
+    font-family: arial;
+    position: relative;
+    left: 70px;
+}
+
+.boxRight:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #14319A;
+    border-top: 10px solid #14319A;
+    border-bottom: 10px solid transparent;
+    right: 20px;
+    bottom: -23px;
+  }
+  
+.boxRight:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #d9d9d9;
+    border-top: 10px solid #d9d9d9;
+    border-bottom: 10px solid transparent;
+    right: 24px;
+    bottom: -13px;
+  }
+
+  .title {
+      font-size: 15px;
+      text-align: left;
+      align-items: left;
+
+  }
+  
+  
 
  
