@@ -7,7 +7,7 @@ import Home from './pages/Home';
 export const UserContext = React.createContext();
 
 function App() {
-  const[description, setDescription] = React.useState("h");
+  const[description, setDescription] = React.useState("");
   const[tags, setTags] = React.useState("");
   const[title, setTitle] = React.useState("");
   return (

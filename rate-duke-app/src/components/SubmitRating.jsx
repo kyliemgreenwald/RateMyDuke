@@ -29,7 +29,7 @@ const SubmitRating = (props) => {
         setOpen(false);
         setDescription(data);
         setTags(data1);
-        setTitle(data2);
+        console.log(description);
     }
     const handleOpen = () => {
         setOpen(true);
@@ -69,7 +69,7 @@ const SubmitRating = (props) => {
                                     <Grid container spacing={2} direction={'row'} padding={4}>
                                         <Grid item xs={7}>
                                             <TextField fullWidth id="title" label="Title" variant="outlined" alignContent="baseline"
-                                            value={data2} onChange={(e) => setData2(e.target.value)}/>
+                                            value={title} onChange={(e) => setTitle(e.target.value)}/>
                                         </Grid>
                                         <Grid item xs ={5}>
                                             <FormControl fullWidth>
