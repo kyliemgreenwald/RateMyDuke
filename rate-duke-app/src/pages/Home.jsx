@@ -32,7 +32,7 @@ export default function Home() {
                 <div className="button">
                     <Button 
                         variant="contained"
-                        href={'./ratings/extracurriculars'}
+                        href={'./ratings'}
                         sx={{
                             backgroundColor: '#FFBB54',
                             fontSize: "large",
