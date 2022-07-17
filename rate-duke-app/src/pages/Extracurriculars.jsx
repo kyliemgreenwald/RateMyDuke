@@ -51,15 +51,9 @@ const Extracurriculars = () => {
         
     }, [description]);
     
-    return(
-        
+    return(      
             <div className="page">
-<<<<<<< HEAD
             <div className="scrollable-div" >
-=======
-              <ForumMenu />
-            <div className="scrollableDiv" >
->>>>>>> a0ed9dff3499285bd8361125934bbcdc5e50df49
             {boxList.reverse()}
             <BoxLeft title="Pitchforks" description="When you need a snack late at night, this is the place
             to go. They have the best grilled cheeses on campus. I recommend getting as many as you can!"/>
@@ -77,6 +71,7 @@ const Extracurriculars = () => {
             </div>
             <SubmitRating />
              </div>
+            
 
         
         

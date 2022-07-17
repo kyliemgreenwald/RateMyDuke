@@ -11,7 +11,7 @@ export default function ForumMenu(props) {
           : menuWrap.setAttribute("aria-hidden", true);
     };
     return (
-        <Menu noOverlay onStateChange={toggleMenu}>
+        <Menu onStateChange={toggleMenu}>
           <a className="menu-item" href="/">
             Home
           </a>
