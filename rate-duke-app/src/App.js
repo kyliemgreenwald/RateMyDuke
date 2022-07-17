@@ -16,7 +16,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/ratings/extracurriculars' element={<Extracurriculars />} />
+            <Route path='/ratings' element={<Extracurriculars />} />
           </Routes>
         </div>
       </BrowserRouter>
