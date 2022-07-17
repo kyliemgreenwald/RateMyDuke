@@ -1,24 +1,42 @@
 import React from 'react';
 import SubmitRating from '../components/SubmitRating';
-export const UserContext = React.createContext();
+import '../pages/Extracurriculars.css';
+import Box from '@mui/material/Box';
+// import Typography from '@mui/material/Typography';
+import BoxLeft from '../components/BoxLeft';
+import BoxRight from '../components/BoxRight';
+import Button from '@mui/material/Button';
+import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
+import { useEffect} from 'react';
+import { UserContext } from '../App'
 
 
-export default function Extracurriculars(){
-    const[description, setDescription] = React.createContext();
-    const[tags, setTags] = React.createContext();
-    const[title, setTitle] = React.createContext();
+const Extracurriculars = () => {
+    const { description, setDescription, tags, setTags , title, setTitle} = React.useContext(UserContext);
+    const[boxList, setBoxList] = React.useState([]);
+    
+    
+    useEffect(() => {
+        setBoxList(boxList.concat(<BoxLeft key={boxList.length}/>));
+    }, [description]);
+    
     return(
-        <div>
-            
+        
+            <div className="page">
+            <BoxLeft />
+            <BoxRight />
+            <BoxLeft />
+            <BoxRight />
+            <BoxLeft />
+            <BoxRight />
+            {boxList}
+            <SubmitRating />
+             </div>
 
-            
-            
-            <h1>hi</h1>
-            <UserContext.Provider value={{description, setDescription, tags, setTags, title, setTitle}}>
-                <SubmitRating/>
-            </UserContext.Provider>
-
-        </div>
+        
+        
         
     );
 }
+
+export default Extracurriculars

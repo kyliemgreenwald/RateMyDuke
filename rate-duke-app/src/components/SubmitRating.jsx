@@ -11,17 +11,25 @@ import { MenuItem } from '@mui/material';
 import { FormControl } from '@mui/material';
 import { InputLabel } from '@mui/material';
 import { Select } from '@mui/material';
-import { UserContext } from '../pages/Extracurriculars';
-const SubmitRating = () => {
+import { UserContext } from '../App';
+import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
+import { useEffect} from 'react';
+
+/*value={data} onChange={(e) => setData(e.target.value)}*/
+const SubmitRating = (props) => {
     const { description, setDescription, tags, setTags , title, setTitle} = React.useContext(UserContext);
-    const [open, setOpen] = React.useState(false);
-    //const [submit, setSubmit] = React.useState(false);
+    const [open, setOpen] = React.useState(props.clicked);
+    const [submit, setSubmit] = React.useState(false);
     const [change, setChange] = React.useState(false);
     const [data, setData] = React.useState("");
     const [data1, setData1] = React.useState("");
     const [data2, setData2] = React.useState("");
+   
     const handleClose = () => {
         setOpen(false);
+        setDescription(data);
+        setTags(data1);
+        setTitle(data2);
     }
     const handleOpen = () => {
         setOpen(true);
@@ -29,15 +37,17 @@ const SubmitRating = () => {
     const handleChange = () => {
         setChange(true);
     }
-    const handleSubmit = () => {
-        setDescription(data);
-        setTags(data1);
-        setTitle(data2);
-    }
+    
+    
     
     return(
         <div>
-            <Button onClick={handleOpen}>Submit a Rating</Button>
+            <Button variant="contained" startIcon={<AddBoxRoundedIcon />} 
+                style={{fontSize: "large", backgroundColor: "#FFBB54", color: "black",
+                float: "right", marginBottom: "20px", marginRight: "320px"}}
+                onClick={handleOpen}>
+                Add
+            </Button>
             <Modal
                 open = {open}
                 onClose = {handleClose}
@@ -46,7 +56,6 @@ const SubmitRating = () => {
             >   
 
                 <Grid container spacing={2}  direction={'row'}>
-                    {/*<Grid item xs={10}>*/}
                         <Container className='modal-border'>
                             <Box
                                         
@@ -86,10 +95,15 @@ const SubmitRating = () => {
                                         </Grid>
                                         <Grid item xs ={12}>
                                             <TextField fullWidth id="tags" label="Tags ..." variant="outlined" 
-                                            value={data1} onChange={(e) => setData1(e.target.value)}/>
+                                            value={data1} onChange={(e) => setData1(e.target.value)}
+                                            />
 
                                         </Grid>
-                                        <Button onClick={handleSubmit}>Submit</Button>
+                                        <Grid item xs = {2}>
+                                            <Button onClick={handleClose}>Submit</Button>
+
+                                        </Grid>
+                                        
                                     </Grid>
                             </Box>
 
