@@ -4,25 +4,23 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 export default function ForumMenu(props) {
-    return(
-        <Box sx={{backgroundColor: 'white'}}>
-            <Menu {...props} width={300}>
-            <Typography variant='h4' className="menu-item" href="/ratings">
-                Home
-            </Typography>
-
-            <Typography variant='h4' className="menu-item" href="/ratings/extracurriculars">
-                Extracurriculars
-            </Typography>
-
-            <Typography variant='h4' className="menu-item" href="/ratings/dining">
-                Dining
-            </Typography>
-
-            <Typography variant='h4' className="menu-item" href="/ratings/other">
-                Other
-            </Typography>
-            </Menu>
-        </Box>
+    const toggleMenu = ({ isOpen }) => {
+        const menuWrap = document.querySelector(".bm-menu-wrap");
+        isOpen
+          ? menuWrap.setAttribute("aria-hidden", false)
+          : menuWrap.setAttribute("aria-hidden", true);
+    };
+    return (
+        <Menu noOverlay onStateChange={toggleMenu}>
+          <a className="menu-item" href="/">
+            Home
+          </a>
+          <a className="menu-item" href="/about">
+            About
+          </a>
+          <a className="menu-item" href="/contact">
+            Contact
+          </a>
+        </Menu>
     );
 }

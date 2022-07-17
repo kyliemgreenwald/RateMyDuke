@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Duke from '../icons/DukeLogo';
 import './Home.css';
 import Button from '@mui/material/Button';
-
+import ForumMenu from '../components/ForumMenu';
 export default function Home() {
     const ref = React.useRef();
 

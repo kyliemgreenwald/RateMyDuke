@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import { useEffect} from 'react';
 import { UserContext } from '../App'
+import ForumMenu from '../components/ForumMenu';
 
 
 const Extracurriculars = () => {
@@ -31,6 +32,10 @@ const Extracurriculars = () => {
     */
     
     useEffect(() => {
+        const menuWrap = document.querySelector(".bm-menu-wrap");
+        if (menuWrap) {
+          menuWrap.setAttribute("aria-hidden", true);
+        }
         if(first){
             console.log("happy day!")
             setFirst(false);
@@ -49,7 +54,12 @@ const Extracurriculars = () => {
     return(
         
             <div className="page">
+<<<<<<< HEAD
             <div className="scrollable-div" >
+=======
+              <ForumMenu />
+            <div className="scrollableDiv" >
+>>>>>>> a0ed9dff3499285bd8361125934bbcdc5e50df49
             {boxList.reverse()}
             <BoxLeft title="Pitchforks" description="When you need a snack late at night, this is the place
             to go. They have the best grilled cheeses on campus. I recommend getting as many as you can!"/>
