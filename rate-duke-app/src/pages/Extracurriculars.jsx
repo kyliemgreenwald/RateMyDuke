@@ -49,13 +49,14 @@ const Extracurriculars = () => {
     return(
         
             <div className="page">
+            <div className="scrollableDiv" >
             {boxList.reverse()}
             <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
             <BoxRight title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
             <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
             <BoxRight title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
             <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-            
+            </div>
             <SubmitRating />
              </div>
 
