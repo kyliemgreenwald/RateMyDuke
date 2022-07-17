@@ -110,6 +110,16 @@
     background: linear-gradient(0deg, #FFBB54, #FFBB54), linear-gradient(0deg, #FFBB54, #FFBB54), #FFBB54;
     border: 0.5px solid #000000;
   }
+
+  .scrollable-div {
+    background-color: #14319A;
+    height: 540px;
+    overflow: auto;
+    width: 100%;
+    margin: 20px;
+    text-align: justify;
+    padding: 10px;
+  }
   
   
 
