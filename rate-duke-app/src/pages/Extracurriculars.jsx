@@ -9,11 +9,17 @@ import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import ForumMenu from '../components/ForumMenu';
 
 const Extracurriculars = () => {
+  React.useEffect(() => {
+    const menuWrap = document.querySelector(".bm-menu-wrap");
+    if (menuWrap) {
+      menuWrap.setAttribute("aria-hidden", true);
+    }
+  }, []);
   return (
     // add background color
     // style={{backgroundColor: "#14319A", height: "100%", width: "100%"}}
     <div className="page" id="page">
-        <ForumMenu pageWrapId={"page-wrap"} outerContainerId={"page"}/>
+        <ForumMenu />
         <div className="page-wrap">
             <BoxLeft />
             <BoxRight />
