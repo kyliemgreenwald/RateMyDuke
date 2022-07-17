@@ -98,7 +98,7 @@
     height: 100%;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 160px;
   }
   .star {
     box-sizing: border-box;
@@ -113,12 +113,12 @@
 
   .scrollable-div {
     background-color: #14319A;
-    height: 540px;
+    height: 640px;
     overflow: auto;
     width: 100%;
-    margin: 20px;
+    /* margin: 20px; */
     text-align: justify;
-    padding: 10px;
+    /* padding: 10px; */
   }
   
   

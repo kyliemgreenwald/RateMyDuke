@@ -85,6 +85,7 @@ const SubmitRating = (props) => {
                                                     <MenuItem value={"dining"}>Dining</MenuItem>
                                                     <MenuItem value={"social"}>Social</MenuItem>
                                                     <MenuItem value={"sports"}>Sports</MenuItem>
+                                                    <MenuItem value={"durham"}>Durham Life</MenuItem>
                                                 </Select>
                                             </FormControl>
                                         </Grid>

@@ -49,13 +49,21 @@ const Extracurriculars = () => {
     return(
         
             <div className="page">
-            <div className="scrollableDiv" >
+            <div className="scrollable-div" >
             {boxList.reverse()}
-            <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-            <BoxRight title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-            <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-            <BoxRight title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
-            <BoxLeft title="post" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+            <BoxLeft title="Pitchforks" description="When you need a snack late at night, this is the place
+            to go. They have the best grilled cheeses on campus. I recommend getting as many as you can!"/>
+            <BoxRight title="FEMMES" description="For those who don't know, FEMMES stands for Females
+            Excelling More in Math, Engineering and Science. You get to teach elementary school girls on
+            various STEM topics. They are always excited to see what you each week!"/>
+            <BoxLeft title="Monuts" description="This brunch place is INCREDIBLE and so well-priced too.
+            Even though it sounds weird, I highly recommend getting the chicken and pickle biscuit."/>
+            <BoxRight title="Jeni's" description="This place just opened this summer and I have already
+            been way too many times. It is overpriced, but the flavors are so unique and so good."/>
+            <BoxLeft title="DTech" description="Join, join, join! If you're interested in tech, do yourself
+            a favor and join this community. There is so much support that they offer, from mentorship to guidance
+            on registering for classes to recruiting prep. I cannot stress enough how glad I am that I am 
+            apart of this group on campus."/>
             </div>
             <SubmitRating />
              </div>
